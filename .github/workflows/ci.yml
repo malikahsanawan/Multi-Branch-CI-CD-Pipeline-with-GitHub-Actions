@@ -28,9 +28,10 @@ jobs:
       with:
         projectBaseDir: .
         args: >
-         -Dsonar.projectKey=YOUR_PROJECT_KEY
-         -Dsonar.organization=YOUR_ORG_NAME
-         -Dsonar.host.url=https://sonarcloud.io  
+         -Dsonar.projectKey=malikahsanawan_Multi-Branch-CI-CD-Pipeline-with-GitHub-Actions
+         -Dsonar.organization=malikahsanawan
+         -Dsonar.sources=.
+         -Dsonar.host.url=https://sonarcloud.io
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         #SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
