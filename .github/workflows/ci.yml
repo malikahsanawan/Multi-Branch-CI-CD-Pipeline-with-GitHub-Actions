@@ -27,6 +27,10 @@ jobs:
       uses: sonarsource/sonarqube-scan-action@master
       with:
         projectBaseDir: .
+        args: >
+         -Dsonar.projectKey=YOUR_PROJECT_KEY
+         -Dsonar.organization=YOUR_ORG_NAME
+         -Dsonar.host.url=https://sonarcloud.io  
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         #SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
